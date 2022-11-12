@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center center;
+    transition: 0.4s;
+}
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    width: 1440px;
+    height: 100%;
+}
+
+.headerText {
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 30px;
+    text-shadow: 1px 3px 0 #969696
+}
+
+.prewiewText {
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-shadow: 1px 1px 0 #969696
+}
+
+.listContainerWrap {
+    height: min-content;
+    width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.listContainer {
+    display: grid;
+    gap: 10px;
+}
+
+.infoButtonContainer {
+    align-items: flex-end;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.infoButtonDiscordContentWrap {
+    display: flex;
+    margin: auto auto;
+    padding: 5px;
+    gap: 5px;
+}
+
+.infoButtonDiscord {
+    display: flex;
+    
+    width: 100px;
+    height: 30px;
+    background-color: #222;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.infoButtonDiscord:hover {
+    background-color: rgb(2, 104, 221);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: 0.4s;
+}
+
+.infoButtonDiscord img {
+    margin: auto 0;
+    height: 12px;
+    width: auto;
+}
+
+.infoButtonDiscordText {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.backgroundListContainer{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    width: 260px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.backgroundIconWrap {
+    filter: brightness(0) invert(1);
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.backgroundIconWrap:hover {
+    filter: none;
+    transition: 0.3s;
+}
+
+.backgroundListText {
+    margin: auto 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.addTaskBlockMenu {
+    display: grid;
+    height: 60px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.3s;
+}
+
+.addTaskContainerWrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.addTaskInput {
+    border-radius: 10px;
+    background-color: #222;
+    border: none;
+    outline: none;
+    width: 300px;
+    transition: 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.addTaskInput[type=text] {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.788);
+}
+
+.addTaskInput::placeholder {
+    font-size: 20px;
+}
+
+.addTaskButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    border: none;
+    font-size: 25px;
+    color: #555;
+    margin: auto 0;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.addTaskBlockMenu:hover {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.4s;
+}
+
+.addTaskBlockMenu:hover .addTaskInput {
+    background-color: #fff;
+    color: #333;
+    transition: 0.4s;
+}
+
+.addTaskBlockMenu:hover .addTaskButton {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    color: #555;
+    transition: 0.4s;
+}
+
+.addTaskBlockMenu .addTaskButton:hover {
+    background-color: rgba(23, 206, 33, 0.911);
+    color: #fff;
+    transition: 0.4s;
+}
+
+.addTaskBlockMenu:focus-within {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.4s;
+}
+
+.addTaskBlockMenu:focus-within .addTaskInput {
+    background-color: #fff;
+    color: #333;
+    transition: 0.4s;
+}
+
+.addTaskBlockMenu:focus-within .addTaskButton {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    color: #555;
+    transition: 0.4s;
+}
+
+.taskCard {
+    margin-top: 10px ;
+    display: flex;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 10px;
+    transition: 0.3s;
+    height: min-content;
+}
+
+.taskCard:hover {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.4s;
+
+}
+
+.taskCardContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    flex-wrap: wrap;
+    word-break: break-all;
+    word-wrap: normal;
+}
+
+.taskCard .taskCardContent {
+    line-height: 10px;
+}
+
+.taskCardText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.788);
+    width: 90%;
+    margin: auto 0;
+    line-height: 20px;
+}
+
+.taskCardButton {
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    font-size: 18px;
+    color: #555;
+    background-color: transparent;
+    transition: 0.3s;
+    margin-right: 2px;
+}
+
+.taskCardButton:hover {
+    background-color: #DD4132;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: 0.4s;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body background="background/background1.jpg">
+    <div class="container">
+        <div class="headerText">
+            To-Do List
+        </div>
+        <div class="prewiewText">
+            You task helper :)
+        </div>
+        <div class="listContainerWrap">
+            <div class="infoButtonContainer">
+                <a href="https://discord.com" target="_blank">
+                    <button class="infoButtonDiscord">
+                        <div class="infoButtonDiscordContentWrap">
+                            <img src="icon/discord-icon.png" alt="">
+                            <div class="infoButtonDiscordText">
+                                Discord
+                            </div>
+                        </div>
+                    </button>
+                </a>
+                <div class="backgroundListContainer">
+                    <div class="backgroundListText">
+                        Background:
+                    </div>
+                    <img src="icon/spruce.png" class="backgroundIconWrap" onclick="backgroundOneClickFunction()">
+                    <img src="icon/mountain.png" class="backgroundIconWrap" onclick="backgroundTwoClickFunction()">
+                    <img src="icon/boat.png" class="backgroundIconWrap" onclick="backgroundThreeClickFunction()">
+                </div>
+            </div>
+            <div class="listContainer">
+                <div class="addTaskBlockMenu" id="addTaskBlock">
+                    <div class="addTaskContainerWrap">
+                        <input class="addTaskInput" id="addTaskInput" type="text" placeholder="Enter your task . . .">
+                        <button class="addTaskButton" id="addTaskButton" onclick="taskOperation()"> + </button>
+                    </div>
+                </div>
+                <div class="taskBlock" id="taskBlock">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="code.js"></script>
+
+</html>
